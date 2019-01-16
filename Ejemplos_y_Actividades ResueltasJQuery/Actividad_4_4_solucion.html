@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+ <script type="text/javascript" src="jquery-1.6.4.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$("li").hover(function () { 
+			 	
+				$(this).css("color", "red");
+
+				}, function () {
+				
+				$(this).css("color", "blue");
+			}); 
+			
+	
+		$("li#localizacion").toggle(function () { 
+			 	
+				$("span#opcion_loc").show();
+
+				}, function () {
+				
+				$("span#opcion_loc").hide();
+			}); 
+			
+		
+		$("li#recetas").toggle(function () { 
+			 	
+				$("span#opcion_rec").show();
+
+				}, function () {
+				
+				$("span#opcion_rec").hide();
+			}); 
+			
+		});
+
+</script>
+ <style>
+  body { background:#99CCFF;}
+  ul { margin-left:20px; color:blue; }
+  li { cursor:default; }
+  span { display:none; background:#CCCCFF ;}
+  </style>		
+</head>
+<body>
+  <ul>
+    <li id="localizacion">Localización</li>
+	<span id="opcion_loc">
+    <ul> 
+		<li>Mapa</li>
+	    <li>Dirección</li>
+	    <li>Teléfonos</li>
+	</ul>
+	</span>
+    <li id="recetas">Recetas</li>
+	<span id="opcion_rec">
+    <ul> 
+		<li>de Carne</li>
+	    <li>de Pasta</li>
+	    <li>de Verduras</li>
+	</ul>
+	</span>
+  </ul>
+
+
+</body>
+</html>

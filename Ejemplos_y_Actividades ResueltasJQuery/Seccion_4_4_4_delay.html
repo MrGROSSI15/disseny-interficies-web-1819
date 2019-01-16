@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+<head>
+	<title>Ejemplo de animación con delay()</title>
+	<script type="text/javascript" src="jquery-1.6.4.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("div").click(function() {
+		   $("div.antes").slideUp(300);
+		   $("div.antes").fadeIn(800);
+		   $("div.despues").slideUp(300);
+		   $("div.despues").delay(800);
+		   $("div.despues").fadeIn(800);
+		   });
+	});
+	</script>
+<style>
+	div.antes {	background-color:#aac; }
+	div.despues {background-color:#abc;	}
+</style>
+</head>
+<body>
+	<h3> Pincha en cualquiera de los textos </h3>
+	<div class="antes"><p>   Ántes </p> </div>
+	<div class="despues"><p>   Después  </p> </div>
+	<div class="antes"><p>   Ántes </p> </div>
+	<div class="despues"><p>   Después  </p> </div>
+</body>
+</html>
+

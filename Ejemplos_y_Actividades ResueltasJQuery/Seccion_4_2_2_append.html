@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+<head>
+<title>Ejemplo uso append </title>
+<script type="text/javascript" src="jquery-1.6.4.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".misdivs").bind("click mouseenter mouseleave", function(e){
+   			$(".misdivs").append("<p><b>Texto</b> insertado en los div</p>");
+		})
+	});
+</script>
+<style media="screen">
+	body { background: #666; }
+	.misdivs {background: #623; }
+</style>
+</head>
+<body>
+	<div class="misdivs">Mi div 1 </div>
+	<div class="misdivs">Mi div 2</div>
+</body>
+</html>
+
+

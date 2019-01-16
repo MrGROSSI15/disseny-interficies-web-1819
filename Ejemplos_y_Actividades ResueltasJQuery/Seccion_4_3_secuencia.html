@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+<head>
+<title>Ejemplo uso secuencuia</title>
+<script type="text/javascript" src="jquery-1.6.4.js"></script>
+<script type="text/javascript">
+	var ocultar=function () { 
+			$("#misdivs3").css({'background': 'green'});
+			$("#misdivs3").fadeIn(2000); 
+			};
+	$(document).ready(function() {
+		
+		$("#misdivs").fadeOut(2000).css({'background': 'blue'}).fadeIn(2000);
+		$("#misdivs2").fadeOut(2000, function(){
+			$("#misdivs2").css({'background': 'red'});
+			$("#misdivs2").fadeIn(2000);
+		});
+		$("#misdivs3").fadeOut(2000, ocultar);
+	});
+	
+</script>
+<style media="screen">
+	body { background: #666; }
+	h1{color:#00CC00;}
+	
+</style>
+</head>
+<body>
+	<h1> Titulo </h1>
+	<div id="misdivs">mis divs</div>
+	<div id="misdivs2">mis divs</div>
+	<div id="misdivs3">mis divs</div>
+</body>
+</html>
+

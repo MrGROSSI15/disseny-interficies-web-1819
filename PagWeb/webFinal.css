@@ -1,0 +1,267 @@
+/* DELIMITATS ELS TROSSOS DE CODI DE CSS PER A CADA COSA */
+
+/* RESPONSIVE */
+* {
+    box-sizing: border-box;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+/* FINRESPONSIVE */
+/* HEAD */
+.fondo{
+    background:url(https://wallpapersite.com/images/wallpapers/yamaha-xjr1300-cafe-racer-4000x2250-4k-16218.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    /* width: 1920px;
+    height: 1080px; */
+}
+/* FINHEAD */
+/* NAVBAR */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+/* FINNAVBAR */
+aside {
+	float: left;
+	border: 1px solid orangered;
+	width: 15%;
+	border: 1px solid orangered;
+}
+/* GRIDIMAGES */
+.moviment{
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/* FINGRIDIMAGES */
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orange;
+}
+h1 h3 body section div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orange;
+}
+
+
+body {
+    font-style: oblique;
+    background-color: #0e1629;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 10px;
+}
+
+section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0px;
+    text-align: left;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 551px;
+    float: left;
+}
+
+
+footer {
+    border: none;
+    clear: both;
+    background: black;
+    text-align: left;
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 15px;
+    border: solid;
+    
+    
+}
+
+/* tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: 300px;
+}
+/* fin tab */
+
+/* buttons */
+.button {
+    background-color: rgb(236, 140, 13); /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color:#ffa538;
+    color: white;
+}
+
+.large {
+    font-size: 1.25em;
+}
+.regular {
+    border-radius: .5em;
+}
+.orange {
+    background-color: #f6cf6f;
+}
+.round {
+    border-radius: 1.50em;
+}
+
+.button-3d {
+    position:relative;
+    width: auto;
+    display:inline-block;
+    color:#ecf0f1;
+    text-decoration:none;
+    border-radius:5px;
+    border:solid 1px #f39c12;
+    background:#e67e22;
+    text-align:center;
+    padding:16px 18px 14px;
+    margin: 12px;
+    
+    -webkit-transition: all 0.1s;
+      -moz-transition: all 0.1s;
+      transition: all 0.1s;
+      
+    -webkit-box-shadow: 0px 6px 0px #d35400;
+    -moz-box-shadow: 0px 6px 0px #d35400;
+    box-shadow: 0px 6px 0px #d35400;
+  }
+  
+  .button-3d:active{
+      -webkit-box-shadow: 0px 2px 0px #d35400;
+      -moz-box-shadow: 0px 2px 0px #d35400;
+      box-shadow: 0px 2px 0px #d35400;
+      position:relative;
+      top:4px;
+  }
+/* buttons*/

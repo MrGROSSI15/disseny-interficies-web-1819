@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <style>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>precedencia estils</title>
+p{background:crimson;} /* 1 punt*/
+.paragraf{background: pink;} /* 10 punts */
+p.paragraf{background:maroon; color:white;} /* 11 punts */
+#id-paragraf{background: orange;} /* 100 punts */
+p#id-paragraf{background: red;} /* 101 punts */
+p.paragraf#id-paragraf{background:green;} /* 111 punts */
+  </style>
+  <title></title>
+
+  
+</head><body>
+<br>
+
+<p> El fons d'aquest paràgraf es de color carmesi </p>
+
+<p class="paragraf"> El fons d'aquest paràgraf es de color granate </p>
+
+<div class="paragraf"> Aquest div tendrà el fons de color rosa </div>
+
+<p id="id-paragraf" class="paragraf"> El fons d'aquest paràgraf es de
+color verd </p>
+
+<p id="id-paragraf" style="background: black none repeat scroll 0% 50%; color: white; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+El fons d'aquest paràgraf es de color negre perque utilitza un atribut
+style que pesa 1000 dins de la etiqueta </p>
+
+<p id="id-paragraf"> El fons d'aquest paràgraf es de color vermell </p>
+
+</body></html>

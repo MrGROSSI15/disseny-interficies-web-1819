@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">\
+\
+<html>\
+\
+	<head>\
+ 		\
+		<title>Ejemplo uso bind() y unbind()</title>\
+\
+		<script type="text/javascript" src="jquery-1.6.4.js"></script>\
+		<script type="text/javascript">\
+\
+		$(document).ready(function() \{\
+\
+			\
+		var funcionqueManeja = function() \{\
+			  if ($(this).css("color")!="rgb(255, 0, 0)")\
+        			 $(this).css("color", "rgb(255, 0, 0)");\
+     			  else\
+      				   $(this).css("color", "rgb(0, 0, 255)");\
+		\}\
+\
+		$("p").bind("click mouseenter mouseleave",funcionqueManeja);\
+		\
+		$("#desactivar-evento").bind("click", function()\{\
+		      $("p").unbind("click", funcionqueManeja );  \})\
+			\
+\
+		\});\
+\
+		</script>\
+\
+		<style media="screen">\
+\
+		body \{ background: #666; \}\
+		\
+		\
+\
+		</style>\
+\
+	</head>\
+\
+	<body>\
+\
+		<p> El texto cambia de color al entrar o salir con el rat\'f3n o hacer click</p>\
+		<input id="desactivar-evento" type=button value="Quitar el cambio de color cuando se hace click AUNQUE SIGUE AL ENTRAR Y SALIR CON EL PUNTERO" >\
+		\
+	</body>\
+\
+</html>\
+\
+}

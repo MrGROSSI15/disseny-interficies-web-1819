@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+		<title>Ejemplo de animación con FadeOut()</title>
+		<script type="text/javascript" src="jquery-1.6.4.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			 $("span").hover(function () { $(this).addClass("hilite"); }, function () { $(this).removeClass("hilite"); }); 
+			 $("span").click(function () {
+			 	 $(this).fadeOut(1000, function () {
+					  $("div").text("'" + $(this).text() + "' ¡Se ha desvanecido!");
+					  $(this).remove();
+				  }); //function del Fade
+			  }); //Function del Click
+			
+		});
+		</script>
+		<style media="screen">
+		/*body { background: #666; }*/
+		span { cursor:pointer; }
+  		span.hilite { background:yellow; }
+		div { display:inline; color:red; } /*Se pone inline para que al quitarlo se ocupe su hueco */
+		</style>
+
+	</head>
+	<body>
+		<h3>Encuentra los adjetivos <div></div></h3> 
+		<p> La chaqueta <span>roja</span> el lo mejor cuando hace un tiempo <span>cálido</span> ¿verdad?</p>
+	</body>
+</html>
+

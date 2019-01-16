@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {background:#33CC99;}
+</style>
+<script type="text/javascript" src="jquery-1.6.4.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+			 $('#objetivo').keypress(function(e) {
+			   e.preventDefault();
+  		           $("#salidapress").html(e.which + ": " + String.fromCharCode(e.which))
+			  
+			});
+		});
+</script>
+</head>
+<body>
+<form>
+  <fieldset>
+    <label for="objetivo">Teclea cualquier cosa</label>
+    <input id="objetivo" type="text" />
+	<div id="salidapress"></div>
+  </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.cubo_cont {
+    font-size: 50px;
+    font-family: handlee;
+}
+
+@media all and (max-width: 460px) {
+    .cubo_cont {
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .cubo_cont {
+        font-size: 50px;
+    }
+}
+
+.cubo_jab {
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #ff6600;
+    padding: 0.3em;
+    display: table;
+    margin: 0.2em auto;
+    margin-bottom: 0.5em;
+    color: inherit;
+    box-shadow: 0.01em 0.01em 0px #ff6600, 0.02em 0.02em 0px #ff6600, 0.03em 0.03em 0px #ff6600,
+        0.04em 0.04em 0px #8b6639, 0.05em 0.05em 0px #8a6639, 0.06em 0.06em 0px #896538,
+        0.07em 0.07em 0px #886438, 0.08em 0.08em 0px #866338, 0.09em 0.09em 0px #856237,
+        0.1em 0.1em 0px #846237, 0.11em 0.11em 0px #836136, 0.12em 0.12em 0px #826036,
+        0.13em 0.13em 0px #815f35, 0.14em 0.14em 0px #805e35, 0.15em 0.15em 0px #7f5e34,
+        0.16em 0.16em 0px #7e5d34, 0.17em 0.17em 0px #7d5c33, 0.18em 0.18em 0px #7c5b33,
+        0.19em 0.19em 0px #7b5a33, 0.2em 0.2em 0px #795a32, 0.21em 0.21em 0px #785932,
+        0.22em 0.22em 0px #775831, 0.23em 0.23em 0px #765731, 0.24em 0.24em 0px #755630,
+        0.25em 0.25em 0px #745630, 0.26em 0.26em 0px #73552f, 0.27em 0.27em 0px #72542f,
+        0.28em 0.28em 0px #71532f, 0.29em 0.29em 0px #70522e, 0.3em 0.3em 0px #6f522e,
+        0.31em 0.31em 0px #6e512d, 0.32em 0.32em 0px #6c502d, 0.33em 0.33em 0px #6b4f2c,
+        0.34em 0.34em 0px #6a4e2c, 0.35em 0.35em 0px #694e2b, 0.36em 0.36em 0px #684d2b,
+        0.37em 0.37em 0px #674c2b, 0.38em 0.38em 0px #664b2a, 0.39em 0.39em 0px #654a2a,
+        0.41em 0.41em 20px rgba(0, 0, 0, 0.6), inset -8px -8px 12px rgba(154, 114, 64, 0.5),
+        inset 8px 8px 12px rgba(199, 164, 120, 0.5);
+}
+
+.cubo_jab div {
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #cc5200;
+    background: #cc5200;
+    padding: 0.2em 0.2em 0.15em 0.2em;
+    font-weight: bold;
+    text-shadow: 0.01em 0.01em 0px #cc5200, 0.02em 0.02em 0px #cc5200, 0.03em 0.03em 0px #cc5200,
+        0.04em 0.04em 0px #ec8b0d, 0.05em 0.05em 0px #e6830b, 0.06em 0.06em 0px #e08515,
+        0.07em 0.07em 0px #bb6c04, 0.08em 0.08em 0px #b36609, 0.09em 0.09em 0px #a05b06,
+        0.09em 0.09em 10px #643a03;
+    box-shadow: inset 0.01em 0.01em 0px #834902, inset 0.02em 0.02em 0px #a55c03,
+        inset 0.03em 0.03em 0px #966f3e, inset 0.04em 0.04em 0px #8f6a3b, inset 0.05em 0.05em 0px #886438,
+        inset 0.06em 0.06em 0px #815f35, inset 0.07em 0.07em 0px #795a32, inset 0.08em 0.08em 0px #72542f,
+        inset 0.09em 0.09em 0px #6b4f2c, inset 0.09em 0.09em 10px #4e3a20, -8px -8px 12px rgba(154, 114, 64, 0.5),
+        px 8px 12px rgba(199, 164, 120, 0.5);
+}
+
+.cubo_jab:hover,
+.cubo_jab_t1 {
+    background: #061de9;
+    color: inherit;
+    box-shadow: -0.01em 0.01em 0px #0846b9, -0.02em 0.02em 0px #0642b3, -0.03em 0.03em 0px #061da0,
+        -0.04em 0.04em 0px #0306b6, -0.05em 0.05em 0px #5250c8, -0.06em 0.06em 0px #684ec8,
+        -0.07em 0.07em 0px #4f4dc8, -0.08em 0.08em 0px #4c73c7, -0.09em 0.09em 0px #4b62c7,
+        -0.1em 0.1em 0px #4c4ac7, -0.11em 0.11em 0px #494bc6, -0.12em 0.12em 0px #4773c6,
+        -0.13em 0.13em 0px #4c4ac7, -0.14em 0.14em 0px #4c4ac7, -0.15em 0.15em 0px #4c4ac7,
+        -0.16em 0.16em 0px #4c4ac7, -0.17em 0.17em 0px #4c4ac7, -0.18em 0.18em 0px #4c4ac7,
+        -0.19em 0.19em 0px #4c4ac7, -0.2em 0.2em 0px #4c4ac7, -0.21em 0.21em 0px #4c4ac7,
+        -0.22em 0.22em 0px #4c4ac7, -0.23em 0.23em 0px #4c4ac7, -0.24em 0.24em 0px #4c4ac7,
+        -0.25em 0.25em 0px #4c4ac7, -0.26em 0.26em 0px #4c4ac7, -0.27em 0.27em 0px #4c4ac7,
+        -0.28em 0.28em 0px #4c4ac7, -0.29em 0.29em 0px #4c4ac7, -0.3em 0.3em 0px #4c4ac7,
+        -0.31em 0.31em 0px #0d0172, -0.32em 0.32em 0px #0d0172, -0.33em 0.33em 0px #0d0172,
+        -0.34em 0.34em 0px #0d0172, -0.35em 0.35em 0px #0d0172, -0.36em 0.36em 0px #0d0172,
+        -0.37em 0.37em 0px #0d0172, -0.38em 0.38em 0px #0d0172, -0.39em 0.39em 0px #0d0172,
+        -0.41em 0.41em 20px rgba(0, 0, 0, 0.6), inset -8px -8px 12px rgba(97, 132, 206, 0.5),
+        inset 8px 8px 12px rgba(175, 190, 230, 0.5);
+}
+
+.cubo_jab:hover div,
+.cubo_jab_t2 {
+    color: #0d0172;
+    background: #0d0172;
+    text-shadow: -0.01em 0.01em 0px #4736e9, -0.02em 0.02em 0px #4433df, -0.03em 0.03em 0px #4e3deb,
+        -0.04em 0.04em 0px #230cf8, -0.05em 0.05em 0px #4331e7, -0.06em 0.06em 0px #4e3cec,
+        -0.07em 0.07em 0px #1f9be4, -0.08em 0.08em 0px #1f9be4, -0.09em 0.09em 0px #1f9be4,
+        -0.09em 0.09em 10px #1f9be4;
+    box-shadow: inset -0.01em 0.01em 0px #0b5e5e, inset -0.02em 0.02em 0px #0b5e5e,
+        inset -0.03em 0.03em 0px #0b5e5e, inset -0.04em 0.04em 0px #0b5e5e, inset -0.05em 0.05em 0px #0b5e5e,
+        inset -0.06em 0.06em 0px #1b5aa1, inset -0.07em 0.07em 0px #1b5aa1, inset -0.08em 0.08em 0px #1b5aa1,
+        inset -0.09em 0.09em 0px #1b5aa1, inset -0.09em 0.09em 10px #1b5aa1,
+        -8px -8px 12px #1b5aa1, 8px 8px 12px #1b5aa1;
+}
+
+.cubo_jab_t {
+    display: inline-block;
+    margin: 20px 30px 40px 30px;
+    height: 80px;
+    width: 80px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}

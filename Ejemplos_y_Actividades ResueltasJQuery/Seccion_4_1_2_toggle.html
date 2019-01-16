@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+
+<head>
+	<title>Ejemplo uso toggle()</title>
+	<script type="text/javascript" src="jquery-1.6.4.js"></script>
+	<script type="text/javascript">
+
+		var poner_Rojo= function() {	$(this).css("color", "rgb(255, 0, 0)");	}
+		var poner_Azul= function() {	$(this).css("color", "rgb(0, 0, 255)");	}
+
+
+		$(document).ready(function() {
+
+			$("p").toggle(poner_Rojo,poner_Azul);
+
+		});
+
+	</script>
+
+	<style media="screen">	body { background: #666; }</style>
+
+</head>
+<body>
+	<p> El texto cambia de color hacer click</p>
+
+</body>
+
+</html>
+

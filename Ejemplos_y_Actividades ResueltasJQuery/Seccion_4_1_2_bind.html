@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+
+	<head>
+ 		
+		<title>Ejemplo uso bind() </title>
+
+		<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$("p").bind("click mouseenter mouseleave", function(e){
+      				if ($(this).css("color")!="rgb(255, 0, 0)")
+        				 $(this).css("color", "rgb(255, 0, 0)");
+     				 else
+      					   $(this).css("color", "rgb(0, 0, 255)");
+   			})
+
+			
+
+		});
+
+		</script>
+
+		<style media="screen">
+
+		body { background: #666; }
+		
+		
+
+		</style>
+
+	</head>
+
+	<body>
+
+
+
+		<p> El texto cambia de color al entrar o salir con el ratón o hacer click</p>
+		
+	</body>
+
+</html>
+

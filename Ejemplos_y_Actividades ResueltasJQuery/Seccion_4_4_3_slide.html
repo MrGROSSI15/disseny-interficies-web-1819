@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+
+	<head>
+ 		
+		<title>Ejemplo de animación con slideDown() </title>
+
+		<script type="text/javascript" src="jquery-1.6.4.js"></script>
+		<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$(document.body).click(function () {
+				if ($("div:first").is(":hidden")) {
+				$("div").slideDown("slow");
+				} else {
+				$("div").hide();
+				}
+			});
+		});
+
+		</script>
+		<style>
+		div { background:#de9a44; margin:3px; width:80px; height:140px; display:none; float:left; }
+		</style>
+
+	</head>
+	<body>
+		
+		¡Pincha Aquí!
+		<div>Los efectos no son sólo para divs o spans</div>
+		<div>También son para cualquier elemento </div>
+		<div><button id="hidr">Botones también</button></div>
+		<div><p> aunque no estén incluidos en un div </p></div>
+	</body>
+</html>
+

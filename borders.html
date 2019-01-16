@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#borderimg1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 50 round;
+}
+
+#borderimg2 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350) 20% round;
+}
+
+#borderimg3 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350) 30% round;
+}
+#p1 {background-color:rgba(255,0,0,0.3);}
+#p2 {background-color:rgba(0,255,0,0.3);}
+#p3 {background-color:rgba(0,0,255,0.3);}
+#p4 {background-color:rgba(192,192,192,0.3);}
+#p5 {background-color:rgba(255,255,0,0.3);}
+#p6 {background-color:rgba(255,0,255,0.3);}
+#example2 {
+    border: 2px solid;
+    padding: 0px;
+    border-radius: 60px 15px 50px 30px;
+}
+#rotate{
+    transform: rotateX(150deg);
+}
+</style>
+
+</head>
+<body>
+
+<h1>The border-image Property</h1>
+
+<p id="borderimg1">border-image: url(border.png) 50 round;</p>
+<p id="borderimg2">border-image: url(border.png) 20% round;</p>
+<p id="borderimg3">border-image: url(border.png) 30% round;</p>
+<img  id="example2" id="rotate" src="https://www.pipeburn.com/wp-content/uploads/2018/03/Lucky_Customs_Moto_Guzzi_V7_Cafe_Racer_BIGS_01.jpg">
+
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+
+<h1>Define Colors With RGBA Values</h1>
+
+<p id="p1">Red</p>
+<p id="p2">Green</p>
+<p id="p3">Blue</p>
+<p id="p4">Grey</p>
+<p id="p5">Yellow</p>
+<p id="p6">Cerise</p>
+</body>
+</html>

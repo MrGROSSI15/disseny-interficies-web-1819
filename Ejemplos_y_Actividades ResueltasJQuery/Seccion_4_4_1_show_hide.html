@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+
+	<head>
+ 		
+		<title>Ejemplo de animación con Show() y Hide()</title>
+
+		<script type="text/javascript" src="jquery-1.6.4.js"></script>
+		<script type="text/javascript">
+		var ocultar=function () { $(this).prev().hide("fast", ocultar); }
+		$(document).ready(function() {
+			$("#hidr").click(function () {
+      			$("span:last-child").hide("fast", ocultar);
+    		});
+  			$("#showr").click(function () {
+			    $("span").show(500);
+		    });
+		});
+
+		</script>
+		<style media="screen">
+		body { background: #666; }
+		span { background:#def3ca; padding:3px; float:left; }
+		</style>
+
+	</head>
+	<body>
+		<button id="hidr">Ocultar</button>
+		<button id="showr">Mostrar</button>
+		<div>
+			<span>Había</span> 
+			<span>una </span> 
+			<span>vez</span> 
+		    <span>un</span> 
+			<span>desarrollador </span> 
+			<span>Web</span> 
+		    <span>...</span>
+  		</div>
+	</body>
+</html>
+
