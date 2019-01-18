@@ -1,6 +1,17 @@
 $(document).ready(function(){
-    $("button").click(function(){
-        $("divCF").hide("slow");
+    $("#caferacer").click(function(){
+      $("#divCR").toggle("slow");
     });
-});
-
+    $("#scrambler").click(function(){
+      $("#divSC").toggle("slow");
+    });
+    $("#bobber").click(function(){
+      $("#divBB").toggle("slow");
+    });
+    $("#bratstyle").click(function(){
+      $("#divBS").toggle("slow");
+    });
+    $("#tracker").click(function(){
+      $("#divTK").toggle("slow");
+    });
+  });

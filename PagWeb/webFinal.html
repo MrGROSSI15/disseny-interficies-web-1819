@@ -12,9 +12,10 @@
     <title>PAGWEB</title>
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="webFinal.js"></script>
 </head>
 
-<body>
+<body onload="myFunction()">
     <!-- HEADER -->
     <header class="fondo">
         <center>
@@ -30,7 +31,19 @@
             <ul>
                 <li><a href="webFinal.html">INICI</a></li>
                 <li><a href="motos.html">MOTOS</a></li>
-                <li><a href="#">ALTRES</a></li>
+                <li><a href="altres.html">ALTRES</a></li>
+                
+                <!-- <div style="float:right" class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Cerca.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div> -->
+                      <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                        <input name="sitesearch" type="hidden" value="">
+                        <input autocomplete="on" class="form-control search" name="q" placeholder="Cerca..." required="required"  type="text">
+                        <button class="button5 regular orange" type="submit">Cerca</button>
+                        </form>
             </ul>
         </div>
     </div>
@@ -61,14 +74,25 @@
         </div>
     </aside> -->
     <!-- SECTION TEXT -->
-    <section>
-        <P> Cafe Racer Passió és la teva comunitat motard, lloc on podràs trobar notícies, imatges i informació;
-            sobre tot el relacionat amb les motos Cafe Racer,
-            Scrambler, clàssiques, Custom, Bobber, Street tracker, Brat Style i altres estils de personalització. </p>
-        <P> Un mitjà gratuït, on gaudir, comentar i compartir la seva opinió sobre tot el que es cou en aquest
-            mundillo. A més, t'ajudem en la teva transformació,
-            i si ets taller o marca, podem col·laborar junts </p>
-    </section>
+    <div>
+
+        <section>
+            <p> Pure Racer és la teva comunitat motard, lloc on podràs trobar notícies, imatges i informació;
+                sobre tot el relacionat amb les motos Cafe Racer,
+                Scrambler, clàssiques, Custom, Bobber, Street tracker, Brat Style i altres estils de personalització. </p>
+                <p> Un mitjà gratuït, on gaudir, comentar i compartir la seva opinió sobre tot el que es cou en aquest
+                    mundillo. A més, t'ajudem en la teva transformació,
+                    i si ets taller o marca, podem col·laborar junts </p>
+                </section>
+                <section>
+                        <button class="button button5 regular orange button-3d" id="prova">OCULTA</button>
+                        <p id="info">Un apassionat i boig per gairebé tot el que té rodes. Per a ell, moure en una moto és símptoma de llibertat. En general, diria que és un amant de les motos Cafe Racer, clàssiques i customitzades.
+
+                                Li encanten els vehicles clàssics, el rotllo vintage, els tatuatges, viatjar, sortir de ruta i prendre unes birres amb els i les col·legues. A més, com si li "sobrés temps", és un gran aficionat a les noves tecnologies.
+                                
+                                En la seva boja cap, dedica un grapat d'hores consumint contingut relacionat amb el món de les motos personalitzades. I ha fet Cafe Racer Passió, el seu objectiu i mig per compartir tota aquesta informació amb tu.</p>
+                </section>
+            </div>
     <!-- FOOTER -->
     <footer>
         <div>
@@ -78,6 +102,9 @@
                         <button class="button button5 regular orange button-3d">IES PAU CASESNOVES</button>
                     </a>
             </div>
+            <!-- <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12274.408356383885!2d2.9135774!3d39.7261243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34ecf1aecb0da723!2sIES+Pau+Casesnoves!5e0!3m2!1sca!2ses!4v1547824640831" width="700" height="94" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div> -->
                 <div style="width:245p; float:right;">
                         <a href="#top">
                             <i class="fas fa-chevron-circle-up fa-3x"></i>
