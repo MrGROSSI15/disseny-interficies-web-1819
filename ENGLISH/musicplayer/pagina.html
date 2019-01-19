@@ -1,61 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="pagina.css">
+    <!-- <link rel="stylesheet" type="text/css" href="motos.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="pagina.js"></script>
-    <link rel="stylesheet" type="text/css" href="pagina.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
-    <title>Document</title>
+  <title>Document</title>
 </head>
 <body>
-    <div id="app-cover">
-        <div id="bg-artwork"></div>
-        <div id="bg-layer"></div>
-        <div id="player">
-          <div id="player-track">
-            <div id="album-name"></div>
-            <div id="track-name"></div>
-            <div id="track-time">
-              <div id="current-time"></div>
-              <div id="track-length"></div>
+  <div class="container">
+    <div class="column add-bottom">
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <span id="npAction">Paused...</span><span id="npTitle"></span>
             </div>
-            <div id="s-area">
-              <div id="ins-time"></div>
-              <div id="s-hover"></div>
-              <div id="seek-bar"></div>
-            </div>
-          </div>
-          <div id="player-content">
-            <div id="album-art">
-              <img src="http://k003.kiwi6.com/hotlink/8msy543338/1.jpg" class="active" id="_1">
-              <img src="http://k003.kiwi6.com/hotlink/ifpd9xk6n4/2.jpg" id="_2">
-              <img src="http://k003.kiwi6.com/hotlink/36u2tfrwiu/3.jpg" id="_3">
-              <img src="http://k003.kiwi6.com/hotlink/l633hnztuz/4.jpg" id="_4">
-              <img src="http://k003.kiwi6.com/hotlink/0yp24xn1o8/5.jpg" id="_5">
-              <div id="buffer-box">Buffering ...</div>
-            </div>
-            <div id="player-controls">
-              <div class="control">
-                <div class="button" id="play-previous">
-                  <i class="fas fa-backward"></i>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
                 </div>
-              </div>
-              <div class="control">
-                <div class="button" id="play-pause-button">
-                  <i class="fas fa-play"></i>
+                <div id="tracks">
+                    <a id="btnPrev">&larr;</a><a id="btnNext">&rarr;</a>
                 </div>
-              </div>
-              <div class="control">
-                <div class="button" id="play-next">
-                  <i class="fas fa-forward"></i>
-                </div>
-              </div>
             </div>
-          </div>
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
         </div>
-      </div>
+    </div>
+  
+  </div>
+  
 </body>
 </html>
