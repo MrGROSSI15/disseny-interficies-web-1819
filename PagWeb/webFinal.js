@@ -1,11 +1,13 @@
-$(document).ready(function(){
-    $("#prova").click(function(){
-      $("#info").hide("slow", function(){
-        alert("La informació està oculta");
-      });
+$(document).ready(function () {
+  $("#prova").click(function () {
+    $("#info").hide("slow", function () {
+      alert("La informació està oculta");
     });
   });
-  function myFunction() {
-    alert("Benvingut a Pure Racer, fet per Marc Grossi");
-  }
-  
+});
+
+function myFunction() {
+  alert("Benvingut a Pure Racer, fet per Marc Grossi");
+  document.getElementById("path").innerHTML =
+    "Ets a: " + window.location.pathname;
+}

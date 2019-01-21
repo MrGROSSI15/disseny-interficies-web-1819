@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="motos.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="motos.js"></script>
+    <script src="webFinal.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
@@ -33,22 +34,32 @@
             <ul>
                 <li><a href="webFinal.html">INICI</a></li>
                 <li><a href="motos.html">MOTOS</a></li>
-                <li><a href="#">ALTRES</a></li>
+                <li><a href="contacte.html">CONTACTE</a></li>
+                <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                    <input name="sitesearch" type="hidden" value="">
+                    <input autocomplete="on" class="form-control search" name="q" placeholder="Cerca..." required="required"
+                        type="text">
+                    <button class="button5 regular orange" type="submit">Cerca</button>
+                </form>
             </ul>
         </div>
     </div>
     <!-- FINNAVBAR -->
     <!-- COS -->
-<center>
+
+    <center>
         <div>
-                <button class="button button5 regular orange button-3d" id="caferacer">CAFE RACER</button>
-                <button class="button button5 regular orange button-3d" id="scrambler">SCRAMBLER</button>
-                <button class="button button5 regular orange button-3d" id="bobber">BOBBER</button>
-                <button class="button button5 regular orange button-3d" id="bratstyle">BRAT STYLE</button>
-                <button class="button button5 regular orange button-3d" id="tracker">TRACKER</button>
+            <button class="button button5 regular orange button-3d" id="caferacer">CAFE RACER</button>
+            <button class="button button5 regular orange button-3d" id="scrambler">SCRAMBLER</button>
+            <button class="button button5 regular orange button-3d" id="bobber">BOBBER</button>
+            <button class="button button5 regular orange button-3d" id="bratstyle">BRAT STYLE</button>
+            <button class="button button5 regular orange button-3d" id="tracker">TRACKER</button>
         </div>
-</center>
-    <div class="container" id="divCR" >
+
+        <p id="path"></p>
+
+    </center>
+    <div class="container" id="divCR">
         <center>
             <h1>CAFE RACER</h1>
 
