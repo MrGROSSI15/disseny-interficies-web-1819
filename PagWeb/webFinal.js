@@ -11,10 +11,14 @@ function myFunction() {
   document.getElementById("path").innerHTML =
     "Ets a: " + window.location.pathname;
 }
-  function myFunction() {
-    alert("Benvingut a Pure Racer, fet per Marc Grossi");
-  }
   function WhichButton(event) {
     alert("M'has pitjat: " + event.button)
   }
+
+  $(document).ready(function() {
+    setTimeout(function() {
+      $('.wrapper').addClass('loaded');
+      
+    }, 2000);
+  });
   
